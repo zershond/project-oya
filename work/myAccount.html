@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>my account</title>
+		<link rel="stylesheet" type="text/css" href="lib/Swiper/dist/css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/myAccount.css"/>
+		
+		<script src="lib/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/Swiper/dist/js/swiper.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/iscroll/build/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/lazyload/jquery.lazyload.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/myAccount.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="zer-header">
+			<div class="zer-title">
+				<a href="index.html" class="prev">
+					<i class="fa fa-angle-left fa-2x"></i>
+				</a>
+				<span>会员中心</span>
+				<a href="#" class="titleList">
+					<i class="fa fa-th-list fa-2x"></i>
+				</a>
+			</div>
+		</div>
+		
+		<!--主体-->
+		<div id="zer-mainBody">
+			
+			<div class="userTitle">
+				<div class="userIcon col-xs-3"><img src="img/18.jpg"/></div>
+				<div class="userAccount col-xs-6">
+					<div>编号12138</div>
+					<div><img src="img/18.jpg" alt="" />普通会员</div>
+				</div>
+				<div class="next col-xs-3"><i class="fa fa-angle-right fa-2x angleright"></i></div>
+			</div>
+			
+			<!--金额-->
+			<div class="userFinance">
+				<div class="box col-xs-4">
+					<a href="">
+						<div>100</div>
+						<div>我的金额</div>
+					</a>
+				</div>
+				<div class="box col-xs-4">
+					<a href="">
+						<div>50</div>
+						<div>可用金额</div>
+					</a>
+				</div>
+				<div class="box col-xs-4">
+					<a href="">
+						<div>1000</div>
+						<div>代币</div>
+					</a>
+				</div>
+			</div>
+			
+			<!--会员级别-->
+			<div class="userList">
+				<ul>
+					<li>
+						<a href="">
+							<span class="color1"><i class="fa fa-user fa-2x"></i></span>
+							<span>一级会员</span>
+							<div class="itemCount">5</div>
+							<span><i class="fa fa-angle-right"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="color2"><i class="fa fa-user-secret fa-2x"></i></span>
+							<span>二级会员</span>
+							<div class="itemCount">5</div>
+							<span><i class="fa fa-angle-right"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="color3"><i class="fa fa-users fa-2x"></i></span>
+							<span>三级会员</span>
+							<div class="itemCount">5</div>
+							<span><i class="fa fa-angle-right"></i></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			
+			<!--会员资料-->
+			<div class="userList">
+				<ul>
+					<li>
+						<a href="">
+							<span class="color1"><i class="fa fa-file-text fa-2x"></i></span>
+							<span>我的订单</span>
+							<!--<div class="itemCount">5</div>-->
+							<span><i class="fa fa-angle-right"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="color2"><i class="fa fa-trophy fa-2x"></i></span>
+							<span>升级为商家</span>
+							<!--<div class="itemCount">5</div>-->
+							<span><i class="fa fa-angle-right"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="color3"><i class="fa fa-edit fa-2x"></i></span>
+							<span>完善资料</span>
+							<!--<div class="itemCount">5</div>-->
+							<span><i class="fa fa-angle-right"></i></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<!--脚部-->
+		<div id="zer-footer">
+			<div class="footer-nav">
+				<a href="index.html"><i class="glyphicon glyphicon-home zer-20px"></i></a>
+				<div>首页</div>
+			</div>
+			<div class="footer-nav">
+				<a href="classification.html"><i class="glyphicon glyphicon-th-large zer-20px"></i></a>
+				<div>分类</div>
+			</div>
+			<div class="footer-nav">
+				<a href="html/list.html"><i class="glyphicon glyphicon-shopping-cart zer-20px"></i></a>
+				<div>购物车</div>
+			</div>
+			<div class="footer-nav">
+				<i class="glyphicon glyphicon-user zer-20px"></i>
+				<div>个人中心</div>
+			</div>
+		</div>
+		
+		<!--导航栏-->
+		<div class="navmorelist hide">
+			<div class="navlist">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="">分类查询</a></li>
+					<li><a href="">购物车</a></li>
+					<li><a href="">会员中心</a></li>
+				</ul>
+			</div>
+		</div>
+	
+		<!--遮罩层-->
+		<div class="loading hide">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</body>
+</html>

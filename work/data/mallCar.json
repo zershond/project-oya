@@ -1,0 +1,14 @@
+{
+	"mallCar":[
+		{"id":"12138","imgSrc":"img/54.jpg","title":"斯文印花黑灰色短袖连衣裙","price":"120","count":"1"},
+		{"id":"12139","imgSrc":"img/55.jpg","title":"斯文印花黑灰色短袖连衣裙","price":"130","count":"1"},
+		{"id":"12140","imgSrc":"img/56.jpg","title":"斯文印花黑灰色短袖连衣裙","price":"140","count":"1"},
+		{"id":"12141","imgSrc":"img/57.jpg","title":"斯文印花黑灰色短袖连衣裙","price":"150","count":"1"},
+		{"id":"12142","imgSrc":"img/58.jpg","title":"斯文印花黑灰色短袖连衣裙","price":"160","count":"1"},
+		{"id":"12143","imgSrc":"img/59.jpg","title":"斯文印花黑灰色短袖连衣裙","price":"170","count":"1"},
+		{"id":"12144","imgSrc":"img/54.jpg","title":"斯文印花黑灰色短袖连衣裙","price":"120","count":"1"},
+		{"id":"12145","imgSrc":"img/55.jpg","title":"斯文印花黑灰色短袖连衣裙","price":"120","count":"1"},
+		{"id":"12146","imgSrc":"img/56.jpg","title":"斯文印花黑灰色短袖连衣裙","price":"120","count":"1"},
+		{"id":"12147","imgSrc":"img/57.jpg","title":"斯文印花黑灰色短袖连衣裙","price":"120","count":"1"}
+	]
+}

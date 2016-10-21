@@ -1,0 +1,236 @@
+@import url(common.css);
+#zer-header .zer-title {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#zer-header .zer-title span {
+  display: block;
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  height: 100%;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  line-height: 48px;
+}
+#zer-header .zer-title .zer-search {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  color: white;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.hide {
+  display: none;
+}
+
+#zer-searchContainer {
+  position: absolute;
+  z-index: 1000;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: white;
+}
+#zer-searchContainer .title {
+  width: 100%;
+  height: 48px;
+  position: relative;
+  background: #8E488E;
+}
+#zer-searchContainer .title span {
+  display: block;
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  height: 100%;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  line-height: 48px;
+}
+#zer-searchContainer .title .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+}
+#zer-searchContainer .title .close .color {
+  color: white;
+}
+#zer-searchContainer .search {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 10px 10px;
+}
+#zer-searchContainer .search .input-group {
+  width: 100%;
+  border: 1px solid #CCCCCC;
+  padding: 10px 0px;
+  border-radius: 10px;
+}
+#zer-searchContainer .search .input-group .zer-search {
+  background: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+#zer-searchContainer .search .input-group .zer-form-control {
+  border: none;
+  padding-left: 0px;
+  background: white;
+  outline: none !important;
+}
+#zer-searchContainer .search .input-group .zer-search-btn {
+  border: none;
+  height: 100%;
+  background: white;
+  outline: none;
+}
+
+#zer-mainBody .zer-container {
+  width: 100%;
+}
+#zer-mainBody .zer-container .blank {
+  width: 100%;
+  height: 54px;
+}
+#zer-mainBody .zer-container .zer-swiper {
+  width: 100%;
+}
+#zer-mainBody .zer-container .zer-swiper img {
+  width: 100%;
+}
+#zer-mainBody .zer-container .imgContainer {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#zer-mainBody .zer-container .imgContainer img {
+  padding: 0;
+  width: 100%;
+}
+#zer-mainBody .zer-container .imgContainer div {
+  padding: 5px;
+  padding-bottom: 0px;
+  float: left;
+}
+#zer-mainBody .zer-container .zer-sale img {
+  padding: 0;
+}
+#zer-mainBody .zer-container .zer-itemlist {
+  width: 100%;
+  overflow: hidden;
+}
+#zer-mainBody .zer-container .zer-itemlist .item {
+  width: 100%;
+  overflow: hidden;
+  padding: 0px 3px;
+  background: white;
+}
+#zer-mainBody .zer-container .zer-itemlist .item img {
+  width: 100%;
+}
+#zer-mainBody .zer-container .zer-itemlist .item .itemInfo {
+  font-size: 14px;
+  color: #616b7f;
+  margin: 5px 0px;
+}
+#zer-mainBody .zer-container .zer-itemlist .item .itemPrice {
+  font-size: 16px;
+  color: #e80080;
+}
+#zer-mainBody .zer-container .zer-itemlist .item .itemPrice span {
+  font-size: 16px;
+  color: #e80080;
+}
+
+#zer-footer .footer-nav {
+  height: 100%;
+  width: 25%;
+  float: left;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 5px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.backToTop {
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #e80080;
+  color: white;
+  text-align: center;
+  line-height: 55px;
+}
+
+.loading {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: #CCCCCC;
+  opacity: 0.5;
+  z-index: 2000;
+}
+.loading ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 20px;
+}
+.loading ul li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  float: left;
+  background: black;
+}
+.loading ul li:nth-child(1) {
+  animation: loading1 1.4s infinite;
+  -webkit-animation: loading1 1.4s infinite;
+  animation-delay: -0.32s;
+  -webkit-animation-delay: -0.32s;
+}
+.loading ul li:nth-child(2) {
+  animation: loading1 1.4s infinite;
+  -webkit-animation: loading1 1.4s infinite;
+  animation-delay: -0.16s;
+  -webkit-animation-delay: -0.16s;
+}
+.loading ul li:nth-child(3) {
+  animation: loading1 1.4s infinite;
+  -webkit-animation: loading1 1.4s infinite;
+}
+@keyframes loading1 {
+  40% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  80% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

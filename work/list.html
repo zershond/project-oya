@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>list</title>
+		<link rel="stylesheet" type="text/css" href="lib/Swiper/dist/css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/list.css"/>
+		
+		<script src="lib/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/Swiper/dist/js/swiper.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/iscroll/build/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/lazyload/jquery.lazyload.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/list.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="zer-header">
+			<div class="zer-title">
+				<a href="index.html" class="prev">
+					<i class="fa fa-angle-left fa-2x"></i>
+				</a>
+				<span>玖姿JUZUI女装专场</span>
+				<a href="#" class="titleList">
+					<i class="fa fa-th-list fa-2x"></i>
+				</a>
+			</div>
+		</div>
+
+		<div id="zer-mainBody">
+			<div class="category">
+				<div id="classBtn" show="show" class="col-xs-4">
+					<span>分类</span><span class="caret"></span>
+				</div>
+				<div id="brandBtn" class="col-xs-4" show="show">
+					<span>品牌</span><span class="caret"></span>
+				</div>
+				<div class="col-xs-4">
+					<span>价格排序</span><span class="caret"></span>
+				</div>
+			</div>
+		
+			<div class="listContainer">
+				<div class="list">
+					<div class="listItem" goodId="12138">
+						<a href="goodInfo.html"><img src="img/54.jpg"/></a>
+						<div class="listInfo">斯文印花黑灰色短袖连衣裙</div>
+						<div class="listPrice">￥<span>120</span></div>
+					</div>
+					<div class="listItem" goodId="12139">
+						<a href="goodInfo.html"><img src="img/55.jpg"/></a>
+						<div class="listInfo">斯文印花黑灰色短袖连衣裙</div>
+						<div class="listPrice">￥<span>120</span></div>
+					</div>
+					<div class="listItem" goodId="12140">
+						<a href="goodInfo.html"><img src="img/56.jpg"/></a>
+						<div class="listInfo">斯文印花黑灰色短袖连衣裙</div>
+						<div class="listPrice">￥<span>120</span></div>
+					</div>
+					<div class="listItem" goodId="12141">
+						<a href="goodInfo.html"><img src="img/57.jpg"/></a>
+						<div class="listInfo">斯文印花黑灰色短袖连衣裙</div>
+						<div class="listPrice">￥<span>120</span></div>
+					</div>
+					<div class="listItem" goodId="12142">
+						<a href="goodInfo.html"><img src="img/58.jpg"/></a>
+						<div class="listInfo">斯文印花黑灰色短袖连衣裙</div>
+						<div class="listPrice">￥<span>120</span></div>
+					</div>
+					<div class="listItem" goodId="12143">
+						<a href="goodInfo.html"><img src="img/59.jpg"/></a>
+						<div class="listInfo">斯文印花黑灰色短袖连衣裙</div>
+						<div class="listPrice">￥<span>120</span></div>
+					</div>
+				</div>
+			</div>
+			
+			<!--分类-->
+			<div class="classify hide">
+				<div class="level1 col-xs-4">
+					<ul>
+						<li next = 'c1'>分类1</li>
+						<li next = 'c2'>分类2</li>
+					</ul>
+				</div>
+				<div class="level2 col-xs-4">
+					<ul class="c1 hide">
+						<li next="c1d1">分类1-1</li>
+						<li next="c1d2">分类1-2</li>
+						<li next="c1d3">分类1-3</li>
+					</ul>
+					<ul class="c2 hide">
+						<li next="c2d1">分类2-1</li>
+						<li next="c2d2">分类2-2</li>
+						<li next="c2d3">分类2-3</li>
+					</ul>
+				</div>
+				<div class="level3 col-xs-4">
+					<ul class="c1d1 hide">
+						<li>分类1-1-1</li>
+						<li>分类1-1-2</li>
+					</ul>
+					<ul class="c1d2 hide">
+						<li>分类1-2-1</li>
+						<li>分类1-2-2</li>
+					</ul>
+					<ul class="c1d3 hide">
+						<li>分类1-3-1</li>
+						<li>分类1-3-2</li>
+					</ul>
+					<ul class="c2d1 hide">
+						<li>分类2-1-1</li>
+						<li>分类2-1-2</li>
+					</ul>
+					<ul class="c2d2 hide">
+						<li>分类2-2-1</li>
+						<li>分类2-2-2</li>
+					</ul>
+					<ul class="c2d3 hide">
+						<li>分类2-3-1</li>
+						<li>分类2-3-2</li>
+					</ul>
+				</div>
+			</div>
+		
+			<div class="brand hide">
+				<ul>
+					<li><a href=""><img src="img/61.jpg"/>品牌A</a></li>
+					<li><a href=""><img src="img/61.jpg"/>品牌A</a></li>
+					<li><a href=""><img src="img/61.jpg"/>品牌A</a></li>
+					<li><a href=""><img src="img/61.jpg"/>品牌A</a></li>
+					<li><a href=""><img src="img/61.jpg"/>品牌A</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--脚部-->
+		<div id="zer-footer">
+			<div class="footer-nav">
+				<a href="index.html"><i class="glyphicon glyphicon-home zer-20px"></i></a>
+				<div>首页</div>
+			</div>
+			<div class="footer-nav">
+				<a href="classification.html"><i class="glyphicon glyphicon-th-large zer-20px"></i></a>
+				<div>分类</div>
+			</div>
+			<div class="footer-nav">
+				<a href="html/list.html"><i class="glyphicon glyphicon-shopping-cart zer-20px"></i></a>
+				<div>购物车</div>
+			</div>
+			<div class="footer-nav">
+				<i class="glyphicon glyphicon-user zer-20px"></i>
+				<div>个人中心</div>
+			</div>
+		</div>
+	
+		<!--导航栏-->
+		<div class="navmorelist hide">
+			<div class="navlist">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="">分类查询</a></li>
+					<li><a href="">购物车</a></li>
+					<li><a href="">会员中心</a></li>
+				</ul>
+			</div>
+		</div>
+	
+		<!--遮罩层-->
+		<div class="loading hide">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</body>
+</html>
+
+

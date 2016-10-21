@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>my car</title>
+		<link rel="stylesheet" type="text/css" href="lib/Swiper/dist/css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/mallCar.css"/>
+		
+		<script src="lib/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/Swiper/dist/js/swiper.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/iscroll/build/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/lazyload/jquery.lazyload.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mallCar.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="zer-header">
+			<div class="zer-title">
+				<a href="index.html" class="prev">
+					<i class="fa fa-angle-left fa-2x"></i>
+				</a>
+				<span>购物车</span>
+				<a href="#" class="titleList">
+					<i class="fa fa-th-list fa-2x"></i>
+				</a>
+			</div>
+		</div>
+		
+		<!--主体-->
+		<div id="zer-mainBody">
+			<div class="carContainer">
+				<div class="shoppingCar">
+					<div class="goodItem" goodId="">
+						<div class="choice col-xs-2"><i class="isCheck fa zer-circle fa-2x fa-circle-o"></i></div>
+						<div class="goodImg col-xs-3"><img src="img/54.jpg"/></div>
+						<div class="goodInfo col-xs-7">
+							<div class="infoTitle">斯文印花黑灰色短袖连衣裙</div>
+							<div class="info">
+								<div class="price col-xs-3">￥<span>120</span></div>
+								<div class="count col-xs-6">
+									<div class="countDown"><i class="fa fa-minus"></i></div>
+									<div class="countNum">1</div>
+									<div class="countUp"><i class="fa fa-plus"></i></div>
+								</div>
+								<div class="delete col-xs-3"><i id="removeItem" class="fa fa-trash fa-2x"></i></div>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+	
+		<!--脚部-->
+		<div id="zer-footer">
+			<div class="mallCar col-xs-3">
+				<span><i class="fa zer-circle fa-circle-o"></i>全选</span>
+			</div>
+			
+			<div class="addCar col-xs-4">支付方式  <span><i class="fa fa-angle-right zer-circle"></i></span></div>
+			
+			<div class="buyNow col-xs-45">确认并支付(<span>0</span>)</div>
+		</div>
+	
+		<!--导航栏-->
+		<div class="navmorelist hide">
+			<div class="navlist">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="">分类查询</a></li>
+					<li><a href="">购物车</a></li>
+					<li><a href="">会员中心</a></li>
+				</ul>
+			</div>
+		</div>
+	
+		<!--遮罩层-->
+		<div class="loading hide">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	
+		<!--支付方式-->
+		<div class="paymentContainer hide">
+			<div class="payment">
+				<ul>
+					<li>余额支付</li>
+					<li>微信支付</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,296 @@
+@import "common.css";
+
+#zer-header{
+    .zer-title{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        color: white;
+        
+        span{
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 40px;
+            right: 40px;
+            text-align: center;
+            line-height: 48px;
+            font-size: 18px;
+        }
+        
+        .prev{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+        
+        .titleList{
+            position: absolute;
+            right: 15px;
+            top:12px;
+        }
+    }
+}
+
+
+#zer-mainBody{
+    
+    .category{
+        width: 100%;
+        padding: 10px 0px;
+        overflow: hidden;
+        border-bottom: 1px solid #ccc;
+        div{
+            padding: 0;
+            text-align: center;
+            font-size: 14px;
+            border-right: 1px solid #CCCCCC;
+        }
+        div:last-child{
+            border: none;
+        }
+    }
+    
+    .listContainer{
+        width: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 42px;
+        bottom: 0px;
+        
+        .list{
+            overflow: auto;
+            
+            .listItem{
+                float: left;
+                width: 50%;
+                padding-right: 5px;
+                padding-bottom: 5px;
+                img{
+                    width: 100%;
+                }
+                
+                .listInfo{
+                    width: 100%;
+                    height: 22px;
+                    padding: 0px 15px;
+                    line-height: 22px;
+                    background: white;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+                
+                .listPrice{
+                    width: 100%;
+                    height: 22px;
+                    line-height: 22px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #E80080;
+                    padding: 0px 20px;
+                    background: white;
+                    
+                    span{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .classify{
+        position: fixed;
+        top: 89px;
+        bottom: 54px;
+        z-index: 1000;
+        width: 100%;
+//      background: gray;
+        
+        .level1{
+            height: 100%;
+            background: #e9e9e9;
+            padding: 0;
+            
+            ul{
+                li{
+                   width: 100%;
+                   height: 38px;
+                   text-align: center;
+                   line-height: 38px;
+                }
+                .active{
+                    background: #f2f2f2;
+                }
+            }
+        }
+        .level2{
+            height: 100%;
+            background: #f2f2f2;
+            padding: 0;
+            
+            ul{
+                li{
+                   width: 100%;
+                   height: 38px;
+                   text-align: center;
+                   line-height: 38px;
+                }
+                .active{
+                    background: #fff;
+                }
+            }
+        }
+        .level3{
+            height: 100%;
+            background: #FFFFFF;
+            
+            ul{
+                li{
+                   width: 100%;
+                   height: 38px;
+                   text-align: center;
+                   line-height: 38px;
+                }
+                .active{
+                    background: #fff;
+                }
+            }
+        }
+    }
+    
+    .brand{
+        width: 100%;
+        position: fixed;
+        top: 89px;
+        bottom: 54px;
+        z-index: 1000;
+        background: #e9e9e9;
+        
+        ul{
+            
+            li{
+                width: 100%;
+                height: 38px;
+                line-height: 38px;
+                vertical-align: middle;
+                padding-left: 10px;
+                border-bottom: 1px solid #CCCCCC;
+                img{
+                    width: 42px;
+                    vertical-align: middle;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+.loading{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: #CCCCCC;
+    opacity: 0.5;
+    z-index: 2000;
+    
+    ul{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60px;
+        height: 20px;
+        
+        li{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            float: left;
+            background: black;
+        }
+        li:nth-child(1){
+            animation: loading1 1.4s infinite;
+            -webkit-animation: loading1 1.4s infinite;
+            animation-delay: -0.32s;
+            -webkit-animation-delay: -0.32s;
+        }
+        li:nth-child(2){
+            animation: loading1 1.4s infinite;
+            -webkit-animation: loading1 1.4s infinite;
+            animation-delay: -0.16s;
+            -webkit-animation-delay: -0.16s;
+        }
+        li:nth-child(3){
+            animation: loading1 1.4s infinite;
+            -webkit-animation: loading1 1.4s infinite;
+        }
+    }
+    
+    @keyframes loading1{
+        0%{
+            
+        }
+        40%{
+            transform: scale(0);
+            -webkit-transform: scale(0);
+        }
+        80%{
+            transform: scale(1);
+            -webkit-transform: scale(1);
+        }
+        100%{
+            transform: scale(1);
+            -webkit-transform: scale(1);
+        }
+    }
+    
+}
+
+
+.navmorelist{
+    
+    
+    .navlist{
+        width: 126px;
+        height: 154px;
+        position: absolute;
+        top: 58px;
+        right: 10px;
+        background: #484F55;
+        z-index: 350;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        -webkit-transform-origin: 0px 0px 0px;
+        opacity: 0.9;
+        -webkit-transform: scale(1, 1);
+        
+         ul{
+             li{
+                border-bottom: 1px solid #5B6166;
+                height: 38px;
+                line-height: 38px;
+                text-align: left;
+                text-indent: 2.5em;
+                background: #484F55;
+                color: white;
+             }
+         }
+    }
+    .navlist:after{
+        content: "";
+        position: absolute;
+        top: -16px;
+        right: 8px;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-color: transparent transparent #484F55 transparent;
+        border-width: 8px;
+    }
+}
